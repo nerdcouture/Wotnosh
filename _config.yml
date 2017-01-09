@@ -18,7 +18,7 @@ tagline: "I'm sure it'll be fine"
 email: nathan.stone@nerdcouture.co.uk
 description: >
   Dragging food blogging kicking and screaming back into the 20th century.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://wotnosh.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wotnosh
 # github_username:  nerdcouture
