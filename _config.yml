@@ -38,7 +38,7 @@ markdown: kramdown
 
 sass:
   style: compressed
-  sass_dir: '_scss'
+  sass_dir: '/_scss'
 
 kramdown:
   input: GFM
