@@ -1,0 +1,94 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: wotnosh.com
+tagline: "I'm sure it'll be fine"
+email: nathan.stone@nerdcouture.co.uk
+description: >
+  Dragging food blogging kicking and screaming back into the 20th century.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: wotnosh
+# github_username:  nerdcouture
+
+# Categories and Tags
+collections:
+  site_categories:
+    output: true
+    permalink: /:name/
+  site_tags:
+    output: true
+    permalink: /tag/:name/
+
+# Build settings
+excerpt_separator: "<!-- more -->"
+markdown: kramdown
+
+sass:
+  style: compressed
+#  sass_dir: '_scss'
+
+kramdown:
+  input: GFM
+
+permalink: '/:categories/:title/'
+paginate: 5
+paginate_path: '/page/:num/'
+
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CNAME
+
+include:
+  - '_pages'
+
+# Navigation, static pages get added to the end automatically.
+nav:
+  home:
+    - '/'
+  Go out:
+    - '/go-out/'
+  Stay in:
+    - '/stay-in/'
+  Live life:
+    - '/live-life/'
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: site_categories
+    values:
+      layout: categories
+  -
+    scope:
+      path: ""
+      type: site_tags
+    values:
+      layout: tags
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true

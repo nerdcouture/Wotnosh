@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% comment %}Blog static page layout.{% endcomment %}
+<!-- Static page content in here. -->
+		<article itemscope>
+			<header>
+				<p class="image"><img src="{% if page.hero %}{{ page.hero }}{% else %}{{ "/assets/images/placeholder.svg" | relative_url }}{% endif %}" alt="{% if page.herodesc %}{{ page.herodesc }}{% else %}A placeholder image, for now.{% endif %}" /></p>
+				<h1>{{ page.title }}</h1>
+			</header>
+{{ content }}		</article>

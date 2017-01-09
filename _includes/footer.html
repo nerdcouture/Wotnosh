@@ -1,0 +1,14 @@
+	<div id="footer">
+	<footer>
+		<div class="social">
+			<h2>Follow us.</h2>{% include follow-links.html %}
+		</div>
+		<div class="site">
+			<h2>More information.</h2>
+			<ul>{% for my_page in site.pages %}{% if my_page.title %}
+				<li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape}}</a></li>{% endif %}{% endfor %}
+			</ul>
+		</div>
+		<p>Copyright 2017 wotnosh.  <span>Site design by nerdcouture.</span></p>
+	</footer>
+	</div>

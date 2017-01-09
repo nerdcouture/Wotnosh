@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% comment %}Blog landing page.{% endcomment %}
+<!-- All articles in date order -->{% for post in paginator.posts %}
+		<article itemscope>
+			<header>
+				<p class="image"><img src="{% if post.hero %}{{ post.hero }}{% else %}{{ "/assets/images/placeholder.svg" | relative_url }}{% endif %}" alt="{% if post.herodesc %}{{ post.herodesc }}{% else %}A placeholder image, for now.{% endif %}" /></p>
+				<h1>{{ post.title }}</h1>
+				<h2>{{ post.author }}
+					<br /><time datetime="{{ post.date | date_to_xmlschema }}">{% assign d = post.date | date: "%-d" %}{{ post.date | date: "%A %B" }} {% case d %}{% when "1" or "21" or "31" %}{{ d }}<sup>st</sup>{% when "2" or "22" %}{{ d }}<sup>nd</sup>{% when "3" or "23" %}{{ d }}<sup>rd</sup>{% else %}{{ d }}<sup>th</sup>{% endcase %}, {{ post.date | date: "%Y" }}</time>
+				</h2>
+				<nav>
+					<ul>{% assign category = site.site_categories | where: "slug", post.category %}{% assign category = category[0] %}
+						<li class="category-link"><a href="{{ category.url }}">{{ category.name }}</a></li>{% if post.tags.size > 0 %}{% for post_tag in post.tags %}{% assign tag = site.site_tags | where: "slug", post_tag %}{% if tag %}{% assign tag = tag[0] %}
+						<li><a href="{{ tag.url }}">{{ tag.name }}</a></li>{% endif %}{% endfor %}
+					</ul>
+				</nav>{% endif %}
+			</header>
+			{{ post.excerpt }}			<a href="{{ post.url }}">Read more.</a>
+		</article>{% endfor %}{% if paginator.total_pages > 1 %}
+		<p>
+			{% if paginator.previous_page %}
+			<a class="previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+			{% else %}
+			<span class="previous">&laquo; Prev</span>
+			{% endif %}
+			{% if paginator.next_page %}
+			<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+			{% else %}
+			<span class="next">Next &raquo;</span>
+			{% endif %}
+		</p>
+{% endif %}

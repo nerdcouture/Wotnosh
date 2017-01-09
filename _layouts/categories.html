@@ -1,0 +1,24 @@
+---
+layout: default
+---
+		<article itemscope>
+			<h1 class="header">Posts by category: {{ page.title }}</h1>
+			<hr />
+		</article>
+{% comment %}Blog category listing page.{% endcomment %}
+<!-- Article list by category ({{ page.slug }}). -->{% if site.categories[page.slug] %}{% for post in site.categories[page.slug] %}
+		<article itemscope>
+			<header>
+				<h1>{{ post.title }}</h1>
+				<h2>{{ post.author }}
+					<br /><time datetime="{{ post.date | date_to_xmlschema }}">{% assign d = post.date | date: "%-d" %}{{ post.date | date: "%A %B" }}{% case d %}{% when "1" or "21" or "31" %}{{ d }}<sup>st</sup>{% when "2" or "22" %}{{ d }}<sup>nd</sup>{% when "3" or "23" %}{{ d }}<sup>rd</sup>{% else %}{{ d }}<sup>th</sup>{% endcase %}, {{ post.date | date: "%Y" }}</time>
+				</h2>{% if post.tags.size > 0 %}
+				<nav>
+					<ul class="taglist">
+						{% for post_tag in post.tags %}{% assign tag = site.site_tags | where: "slug", post_tag %}{% if tag %}{% assign tag = tag[0] %}
+						<li><a href="{{ tag.url }}">{{ tag.name }}</a></li>{% endif %}{% endfor %}
+					</ul>
+				</nav>{% endif %}
+			</header>
+			{{ post.excerpt }}			<a href="{{ post.url }}">Read more.</a>
+		</article><hr />{% endfor %}{% else %}		<p>There are no posts in this category.</p>{% endif %}

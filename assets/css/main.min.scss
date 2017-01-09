@@ -1,0 +1,47 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$config: (
+// Colours
+	subordinate:		#f0f0f0,
+	primary:			#444,
+	highlight:			#901e00,
+	shade:				#d8d8d8,	// #f2d4cd
+	logo:				#444,		// #224232
+	logoshade:			#d8d8d8,	// #d8e0db
+
+// Transitions
+	animation:			0.5s,
+
+// Widths	
+	max-width:			60em,
+	max-para:			45em,
+	width:				100%
+);
+
+$breakpoints: (
+	tiny:				641px,
+	small:				801px,
+	medium:				961px,
+	large:				1345px
+);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// Import partials from the `minima` theme.
+@import "wotnosh";

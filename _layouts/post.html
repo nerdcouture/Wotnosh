@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% comment %}Blog post layout page.{% endcomment %}
+<!-- Blog post in here. -->
+<article itemscope>
+<header>
+  <p class="image"><img src="{% if page.hero  %}{{ page.hero }}{% else %}{{ "/assets/images/placeholder.svg" | relative_url }}{% endif %}" alt="{% if page.herodesc %}{{ page.herodesc }}{% else %}A placeholder image, for now.{% endif %}" /></p>
+  <h1>{{ page.title }}</h1>
+  <h2>{{ page.author }}<br /><time datetime="{{ page.date | date_to_xmlschema }}">{% assign d = page.date | date: "%-d" %}{{ page.date | date: "%A %B" }} {% case d %}{% when "1" or "21" or "31" %}{{ d }}<sup>st</sup>{% when "2" or "22" %}{{ d }}<sup>nd</sup>{% when "3" or "23" %}{{ d }}<sup>rd</sup>{% else %}{{ d }}<sup>th</sup>{% endcase %}, {{ page.date | date: "%Y" }}</time></h2>
+</header>
+{{ content }}
+</article>
