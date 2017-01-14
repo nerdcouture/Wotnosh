@@ -6,12 +6,14 @@ category: go-out
 tags:
   - reviews
 ---
-* toc
-{:toc}
-
 #### Where?
 
 The [Bison Grill Bistro], snugly set inside an impresive timber framed Rhug Estate Farm Shop, on the way to Snowdonia.
+
+<!-- more -->
+
+* toc
+{:toc}
 
 ---
 
@@ -39,9 +41,9 @@ The sandwiches, Chicken & Bacon with Egg Mayonnaise, Rocket & a sun-dried Tomato
 
 Service was prompt, but not rushed, and all around us tables were coming & going with a mixture of families, well to do local couples & groups of friends, keeping the team busy. Despite being busy, nothing was forgotten, offers of sauces for the shoestring fries, dessert menus etc, all delivered with smiles and thank you's.
 
-{.score}
+{:.score}
 this is a gem and one we'll be back at before too long. **4/5**
 
 [Bison Grill Bistro]: https://www.rhug.co.uk/eat/bison-grill
 [crackling]: /assets/images/rhug-crackling.jpg
-[rolls]: /assets/rhug-chickenrolls.jpg
+[rolls]: /assets/images/rhug-chickenrolls.jpg
