@@ -3,6 +3,8 @@ layout: post
 title:  "Chicken Rolls in Wales"
 date:   2017-01-14 12:30:21 +0000
 category: go-out
+author: Wotnosh
+hero: "/assets/images/rhug-chickenrolls.jpg"
 tags:
   - reviews
 ---
@@ -27,10 +29,12 @@ Today was no exception, arriving at about 12.30 they were already busy inside an
 
 #### What?
 
+{:.image}
 ![Crunchy pork crackling with apple sauce.][crackling]
 
 Thought we'd treat ourselves to the Crackling & Apple Sauce as a nibbler before our sandwiches. Delicious crispy crackling, well seasoned with cracked black pepper and served with a delicious homemade apple sauce, yum!
 
+{:.image}
 ![Chicken and bacon rolls.][rolls]
 
 The sandwiches, Chicken & Bacon with Egg Mayonnaise, Rocket & a sun-dried Tomato chutney were lovely, perhaps a bit too much bread, but the rocket lightened this up.
