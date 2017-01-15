@@ -52,6 +52,6 @@ The sandwiches came with a dressed salad garnish, coleslaw and some crisps. My s
 {:.score}
 Overall not great, but not overpriced either at just under £18 inc drinks. **2/5**
 
-[cheese]: /assets/images/whitewaters-cpickle.jpg]
+[cheese]: /assets/images/whitewaters-cpickle.jpg
 [chicken]: /assets/images/whitewaters-cchicken.jpg
 [chips]: /assets/images/whitewaters-chips.jpg
