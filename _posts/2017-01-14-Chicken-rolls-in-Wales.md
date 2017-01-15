@@ -8,15 +8,16 @@ hero: "/assets/images/rhug-chickenrolls.jpg"
 tags:
   - reviews
 ---
-{:.no-toc}
+
 #### Where?
+{:.no-toc}
 
 The [Bison Grill Bistro], snugly set inside the impresive timber framed Rhug Estate Farm Shop, on the way to Snowdonia.
 
 <!-- more -->
 
-{:.no-toc}
 #### Contents
+{:.no-toc}
 
 * toc
 {:toc}
