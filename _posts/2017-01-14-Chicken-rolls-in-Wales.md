@@ -4,7 +4,7 @@ title:  "Chicken Rolls in Wales"
 date:   2017-01-14 12:30:21 +0000
 category: go-out
 author: Wotnosh
-hero: "/assets/images/rhug-chickenrolls.jpg"
+hero: "/assets/images/rhug-outside.jpg"
 tags:
   - reviews
 ---
