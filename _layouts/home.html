@@ -18,7 +18,8 @@ layout: default
 				</nav>{% endif %}
 			</header>
 			{{ post.excerpt }}			<a href="{{ post.url }}">Read more.</a>
-		</article>{% endfor %}{% if paginator.total_pages > 1 %}
+		</article>
+		<hr />{% endfor %}{% if paginator.total_pages > 1 %}
 		<p>
 			{% if paginator.previous_page %}
 			<a class="previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
