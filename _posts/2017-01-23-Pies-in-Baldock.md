@@ -6,7 +6,7 @@ category: go-out
 author:   Wotnosh
 hero:     "/assets/images/georgeiv-turkeypie.jpg"
 tags:
-  - review
+  - reviews
 ---
 
 {:.no_toc}
